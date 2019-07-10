@@ -2,16 +2,14 @@ module.exports = {
     presets: [
         '@vue/app'
     ],
-    "plugins": [
+    "presets": ["@babel/preset-env"],
+    "plugins": ["@babel/plugin-transform-runtime",
+        "@babel/plugin-proposal-object-rest-spread",
+        "@babel/plugin-proposal-class-properties",
         ["component",
-            [
-                {
-                    "libraryName": "mint-ui",
-                    "style": true,
-                    "libraryName": "element-ui",
-                    "styleLibraryName": "theme-chalk"
-                }
-            ]
-        ]
-    ]
+            {
+                "libraryName": "mint-ui",
+                "style": true
+            }
+        ]]
 }

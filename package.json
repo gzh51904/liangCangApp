@@ -9,6 +9,8 @@
         "start": "npm run serve"
     },
     "dependencies": {
+        "@babel/core": "^7.5.4",
+        "@babel/preset-env": "^7.5.4",
         "core-js": "^2.6.5",
         "element-ui": "^2.10.1",
         "mint-ui": "^1.0.2",

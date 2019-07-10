@@ -17,7 +17,7 @@ import Mine from "../pages/Mine";
 // 3.实例化router并配置参数
 let router = new VueRouter({
     // 路由页面信息配置
-    router: [
+    routes: [
         {
             name: 'Shop',
             path: '/shop',//当浏览器地址为#/shop时，渲染Shop组件
