@@ -1,5 +1,5 @@
 <template>
-  <div>{{fff}}</div>
+  <div>发现</div>
 </template>
 
 <script>
