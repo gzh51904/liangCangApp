@@ -49,6 +49,7 @@ export default {
 <style scoped lang="scss">
 .hello {
   ul {
+    background: white;
     margin: 0;
     padding: 0;
     width: 100%;
