@@ -13,9 +13,4 @@ export default {
 </script>
 
 <style>
-div {
-  height: 100px;
-  color: black;
-  width: 100%;
-}
 </style>
