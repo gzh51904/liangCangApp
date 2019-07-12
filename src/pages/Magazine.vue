@@ -101,6 +101,7 @@ ul li{
 }
 .m_left{
   flex:2;
+  text-align: center;
 }
 .m_title{
   flex:8;
@@ -124,10 +125,12 @@ ul li{
   height:24px;
   line-height: 24px;
   font-size:14px;
+  text-align:center;
 }
 .m_main .m_text {
     color:#fff;
     height:100px;
+    text-align:center;
     padding-top:60px;
     width:100%;
 }
