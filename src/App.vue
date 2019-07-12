@@ -6,16 +6,8 @@
 </template>
 
 <script>
-// import Vue from "vue";
-// import { Tabbar, TabItem, TabContainer, TabContainerItem } from "mint-ui";
+import Vue from "vue";
 import Foot from "./components/Footer/Footer";
-// Vue.component(TabContainer.name, TabContainer);
-// Vue.component(TabContainerItem.name, TabContainerItem);
-// Vue.component(Tabbar.name, Tabbar);
-// Vue.component(TabItem.name, TabItem);
-
-// Vue.use(Tabbar);
-// Vue.use(TabItem);
 
 export default {
   name: "app",
@@ -62,6 +54,11 @@ export default {
 </script>
   
 <style lang="scss">
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
 .app {
   margin: 0;
   padding: 0;

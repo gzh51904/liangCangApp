@@ -3,8 +3,17 @@ import App from './App.vue'
 import router from './routers'
 
 // import MintUI from 'mint-ui'
-import '../node_modules/mint-ui/lib/style.css'
+import 'mint-ui/lib/style.css'
 import './assets/iconfont/iconfont.css';
+import Mint from 'mint-ui';
+Vue.use(Mint);
+
+
+
+
+// import { Search } from 'mint-ui';
+
+// Vue.component(Search.name, Search);
 
 // Vue.config.productionTip = false
 // Vue.use(MintUI);
