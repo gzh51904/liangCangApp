@@ -6,8 +6,43 @@
                 <i class="iconfont icon-fangdajing"></i>
             </p>
         </div>
-        <div class="M-header"></div>
-        <div class="M-forter"></div>
+        <div class="M-header">
+            <div class="M-img">
+                <img src="../img/default180.png" alt="">
+            </div>
+            <div class="M-mine">
+                <ul>
+                    <li>
+                        <i class="iconfont icon-gouwuche"></i>
+                        <span>我的订单</span>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-qianbao"></i>
+                        <span>我的红包</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="M-forter">
+            <ul>
+                <li>
+                    <i class="iconfont M-icon icon-shoucang-copy"></i>
+                    <span>我的心愿单</span>
+                </li>
+                <li>
+                    <i class="iconfont M-icon icon-xiaoxi"></i>
+                    <span>我的心愿单</span>
+                </li>
+                <li>
+                    <i class="iconfont M-icon icon-dizhi"></i>
+                    <span>我的心愿单</span>
+                </li>
+                <li>
+                    <i class="iconfont M-icon icon-kefu"></i>
+                    <span>我的心愿单</span>
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 <script>
@@ -19,6 +54,9 @@ export default {
     *{
         margin: 0;
         padding: 0;
+    }
+    ul li{
+        list-style: none;
     }
     body,html{
         width: 100%;
@@ -92,14 +130,16 @@ export default {
     }
     .M-mine ul li span{
         margin-left: 6px;
-        font-size: 14px;
         color: white;
+        font-size: 12px;
     }
     .M-mine ul li{
-        width: 40%;
+        width: 45%;
         height: 20px;
         text-align: center;
         line-height: 20px;
+        border: 1px solid white;
+        border-radius: 4px;
     }
     .icon-gouwuche{
         color: white;
@@ -109,7 +149,29 @@ export default {
     .M-forter{
         width: 100%;
         flex: 1;
-        background: #ccc;
+        background:#F0F0F0;
+        /* display: flex;
+        flex-direction: column-reverse; */
+    }
+    .M-forter ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /* flex-direction: column-reverse; */
+        flex-wrap: wrap;
+    }
+    .M-forter ul li{
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+    .M-forter .M-icon{
+        font-size: 20px;
+        color: #87CEEB;
     }
 </style>
 
