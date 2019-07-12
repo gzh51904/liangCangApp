@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Magazine/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Magazine from './pages/Magazine'
+// import Mint from 'mint-ui';
+// import 'mint-ui/lib/style.css';
+// import Vue from "vue";
+// Vue.use(Mint)
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Magazine
   }
 }
 </script>
@@ -22,7 +25,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  /* color: #2c3e50; */
+  margin-top: 0px;
 }
 </style>
