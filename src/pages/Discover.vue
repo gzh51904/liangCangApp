@@ -13,7 +13,7 @@
     <tab-container />-->
 
     <router-link class="header" head to="/seacher">
-      <mt-button size="large" @click.native="handleClick">
+      <mt-button class="button" size="large" @click.native="handleClick">
         <i class="mint-toast-icon mintui mintui-search"></i>
         清凉
       </mt-button>
@@ -70,20 +70,33 @@ body {
   flex-direction: column;
   .header,
   .footer {
+    // position: fixed;
     display: flex;
     position: flex;
     justify-content: center;
     align-items: center;
+  }
+  .header {
+    background: #fff;
+    .button {
+      width: 94%;
+      position: fixed;
+      top: -1px;
+    }
   }
   a {
     text-decoration: none;
   }
   #main {
     flex: 1;
-    display: flex;
+    margin-top: 53px;
+    // margin-bottom: 40px;
+    background: pink;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
   .mint-button {
-    width: 94%;
+    // width: 94%;
     margin-top: 10px;
     background-color: #f3f3f3;
     /* position: relative; */
