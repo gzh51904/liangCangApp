@@ -12,7 +12,11 @@ import Discover from "../pages/Discover";
 import Magazine from "../pages/Magazine";
 import Cart from "../pages/Cart";
 import Mine from "../pages/Mine";
-import Searcher from "../components/Searcher/Searcher"
+import Searcher from "../components/Searcher/Searcher";
+import Settings from "../pages/Settings";
+import Login from "../pages/Login";
+
+
 
 let Phone = {
     template: `<div>手机</div>`
@@ -84,6 +88,16 @@ let router = new VueRouter({
             path: '/searcher',
             component: Searcher
         },
+        {
+            name: 'Settings',
+            path: '/settings',
+            component: Settings
+        },
+        {
+            name: 'Login',
+            path: '/login',
+            component: Login
+        }
     ]
 })
 

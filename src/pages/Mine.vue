@@ -2,22 +2,37 @@
   <div class="M-app">
     <div class="M-top">
       <h1>我的账号</h1>
-      <p>
+      <!-- <p @click="goto()">
+                <i class="iconfont icon-fangdajing"></i>
+      </p>-->
+      <router-link to="/settings" tag="p" :class="this.$route.fullPath==='/settings'?'active':''">
         <i class="iconfont icon-fangdajing"></i>
-      </p>
+      </router-link>
     </div>
     <div class="M-header">
       <div class="M-img">
         <img src="../img/default180.png" alt />
+        <p>
+          <router-link to="/login" tag="span" :class="this.$route.fullPath==='/login'?'active':''">
+            <span>登录</span>/
+          </router-link>
+          <router-link
+            to="/settings"
+            tag="span"
+            :class="this.$route.fullPath==='/settings'?'active':''"
+          >
+            <span>注册</span>
+          </router-link>
+        </p>
       </div>
       <div class="M-mine">
         <ul>
           <li>
-            <i class="iconfont icon-gouwuche"></i>
+            <i class="iconfont M-hicon icon-gouwuche"></i>
             <span>我的订单</span>
           </li>
           <li>
-            <i class="iconfont icon-qianbao"></i>
+            <i class="iconfont M-hicon icon-qianbao"></i>
             <span>我的红包</span>
           </li>
         </ul>
@@ -43,12 +58,16 @@
         </li>
       </ul>
     </div>
-    <div class="M-header"></div>
-    <div class="M-forter"></div>
   </div>
 </template>
 <script>
-export default {};
+export default {
+  methods: {
+    goto() {
+      this.$router.replace({ name: "Settings" });
+    }
+  }
+};
 </script>
 <style>
 * {
@@ -99,7 +118,9 @@ html {
 .M-header {
   width: 100%;
   height: 35%;
-  background: skyblue;
+  background: #666 url("../img/tmp_bg1.jpg") no-repeat 50% 50%;
+  opacity: 0.4;
+  background-size: cover;
   position: relative;
 }
 .M-img {
@@ -111,11 +132,17 @@ html {
   top: 10%;
   left: 50%;
   margin-left: -40px;
-  overflow: hidden;
 }
 .M-img img {
+  border-radius: 50%;
+  overflow: hidden;
   width: 100%;
   height: 100%;
+}
+.M-img p {
+  font-size: 12px;
+  color: white;
+  text-align: center;
 }
 /* 订单和红包 */
 .M-mine {
@@ -142,7 +169,7 @@ html {
   border: 1px solid white;
   border-radius: 4px;
 }
-.icon-gouwuche {
+.M-hicon {
   color: white;
   font-size: 14px;
 }
