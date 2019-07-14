@@ -12,6 +12,8 @@ import Discover from "../pages/Discover";
 import Magazine from "../pages/Magazine";
 import Cart from "../pages/Cart";
 import Mine from "../pages/Mine";
+import Subsearch from '../components/Subpages/Subsearch';
+
 
 
 // 3.实例化router并配置参数
@@ -42,7 +44,11 @@ let router = new VueRouter({
             name: 'Mine',
             path: '/mine',
             component: Mine
-        },
+        },{
+            name: 'Subsearch',
+            path: '/subsearch',
+            component: Subsearch
+        }
     ]
 })
 

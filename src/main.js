@@ -2,12 +2,12 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './routers'
 
-// import MintUI from 'mint-ui'
+import MintUI from 'mint-ui'
 import '../node_modules/mint-ui/lib/style.css'
 import './assets/iconfont/iconfont.css';
+Vue.use(MintUI);
+ 
 
-// Vue.config.productionTip = false
-// Vue.use(MintUI);
 new Vue({
     render: h => h(App),
 
@@ -17,3 +17,9 @@ new Vue({
 }).$mount('#app')
 
 // 5.使用VueRouter：在任意组件中通过 this.$router
+
+
+
+
+
+
