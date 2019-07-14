@@ -24,14 +24,14 @@
             </div>
             <div class="M-mine">
                 <ul>
-                    <li>
+                    <router-link to="/order" tag="li" :class="this.$route.fullPath==='/order'?'active':''">
                         <i class="iconfont M-hicon icon-gouwuche"></i>
                         <span>我的订单</span>
-                    </li>
-                    <li>
-                        <i class="iconfont M-hicon icon-qianbao"></i>
+                    </router-link>
+                    <router-link to="/login" tag="li" :class="this.$route.fullPath==='/login'?'active':''">
+                        <i class="iconfont M-hicon icon-gouwuche"></i>
                         <span>我的红包</span>
-                    </li>
+                    </router-link>
                 </ul>
             </div>
         </div>

@@ -14,6 +14,7 @@ import Cart from "../pages/Cart";
 import Mine from "../pages/Mine";
 import Searcher from "../components/Searcher/Searcher";
 import Settings from "../pages/Settings";
+import Order from "../pages/Order";
 import Login from "../pages/Login";
 
 
@@ -97,6 +98,11 @@ let router = new VueRouter({
             name: 'Login',
             path: '/login',
             component: Login
+        },
+        {
+            name: 'Order',
+            path: '/order',
+            component: Order
         }
     ]
 })
