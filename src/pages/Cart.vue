@@ -49,7 +49,7 @@
     <el-row>
       <el-col :span="8">
         <div class="grid-content bg-purple bg-purple2 checkall_button"  style="font-size:16px;">
-         <span class="tui-checkbox" :class="{'tui-checked':checkAllFlag}" @click="checkAll(true)" /><span>全选</span> 
+         <span class="tui-checkbox" :class="{'tui-checked':checkAllFlag}" @click="checkAll()" /><span>全选</span> 
         </div> 
       </el-col>
       <el-col :span="8">
@@ -125,6 +125,7 @@ export default {
      }
    },
    created(){
+     console.log(this)
          this.goodslist.map(item=>{
            item.imgurl=require('../'+item.imgurl);
            return item;
@@ -157,17 +158,24 @@ export default {
         this.totalMoney();
       },
       //是否全选
-      // checkAll:function (flag) {
-      // this.checkAllFlag = flag;
-      // var self = this;
-      // this.goods.forEach(function(value,index){
-      // if(typeof value.checked == 'undefined'){
-      // self.$set(value,"checked",self.checkAllFlag);
-      // }else{
-      // value.checked = self.checkAllFlag;
-      // }
-      // })
-    // }
+      checkAll () {
+        var self = this;
+        // console.log(self)
+        if(self.checkAllFlag){
+          this.goodslist.forEach(function(value,index){
+          value.checked = false
+          });
+        self.totalAll=0;
+        self.checkAllFlag=false;
+        }else{
+        // value.checked = self.checkAllFlag;
+        this.goodslist.forEach(function(value,index){
+        self.$set(value,"checked",true)  
+        });
+        self.checkAllFlag=true;
+        this.totalMoney();
+        }
+      },
     //结算选中商品的价格
       totalMoney:function () {
         //初始化总价
@@ -251,12 +259,17 @@ html,body{
     overflow-x:hidden;
     overflow-y:auto;
     .c_context{
-      min-height:600px;
+      height:600px;
       width:100%;
+      overflow-x:hidden;
+      overflow-y:auto;
       text-align:center;
       background: rgb(244, 245, 237);
       margin-top:30px;
       padding-top:10px;
+      ul{
+        margin-bottom:64px;
+      }
       ul li{
       height:80px;
       background:#fff;
