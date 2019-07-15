@@ -301,14 +301,14 @@ html,body{
         font-size:14px;
         border:none;
         border:1px solid #cccc;
-        height:20px;
+        height:26px;
         width:60px;
         vertical-align: middle;
       }
       .selectnum span{
         display:inline-block;
-        height:22px;
-        width:22px;
+        height:25px;
+        width:25px;
         background:#000;
         color:#fff;
         vertical-align: middle;
@@ -339,7 +339,7 @@ html,body{
   .c_cart{
     height:50px;
     position:fixed;
-    bottom:41px;
+    bottom:63px;
     width:100%;
     z-index: 2;
     line-height: 50px;

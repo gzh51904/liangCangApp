@@ -198,7 +198,7 @@
           type: "文化",
           date:'MAR.20'
         },{
-          title:     "2019 最野的音乐节都在这里了",
+          title:      "陪儿子买球鞋，每晚检查作业，这是赫本的普通一天",
           imgurl:    "https://imgs-qn.iliangcang.com/ware/appimg/topic/cover/3638_.jpg?_t=1552893497",
           type: "文化",
           date:'MAR.18'
@@ -302,7 +302,7 @@ ul li{
 }
 .m_main .m_text {
     color:#fff;
-    height:100px;
+    height:160px;
     text-align:center;
     padding-top:60px;
     width:100%;

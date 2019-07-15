@@ -24,7 +24,7 @@
                     <p>获取验证码</p>
                 </form>
                 <div class="loginL">
-                    <span>登录</span>
+                    <span class="loginFont">登录</span>
                 </div>
             </div>
             <!-- <div class="loginL">
@@ -32,7 +32,11 @@
             </div> -->
         </div>
         <div class="loginFooter">
-
+            <div class="loginT">
+                <router-link to="/morelogin" tag="span" :class="this.$route.fullPath==='/morelogin'?'active':''">
+                    更多登录方式 >
+                </router-link>
+            </div>
         </div>
     </div>
 </template>
@@ -63,6 +67,7 @@ export default {
         margin: 0;
         display: flex;
         flex-direction: column;
+        background: white;
     }
     .loginTop{
         height: 6%;
@@ -161,7 +166,7 @@ export default {
         text-align: center;
         line-height: 30px;
     }
-    .logingL span{
+    .loginFont{
         color: white;
     }
     .one{
@@ -170,6 +175,12 @@ export default {
     /* 尾部 */
     .loginFooter{
         flex: 1;
-        /* background: skyblue; */
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .loginT{
+        text-align: center;
+        margin-top: 80%;
     }
 </style>
