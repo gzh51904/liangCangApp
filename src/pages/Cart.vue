@@ -246,12 +246,10 @@ html,body{
   padding:0;
   margin:0;
 }
+
 #content{
   display: flex;
   flex-direction: column;
-}
-
-#content{
   header{
     display: flex;
     position:fixed;
@@ -441,14 +439,5 @@ html,body{
     -webkit-transform:rotate(-45deg);
     transform:rotate(-45deg);
   }
-
-// .c_cart{
-//   .checkall{
-//     border-radius:5px;
-//   }
-// }
-//  .el-radio__label .c_radio{
-//    font-size:20px;
-//  }
 
 </style>
