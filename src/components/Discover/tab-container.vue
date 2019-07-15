@@ -8,7 +8,7 @@
     <!-- 内容区 -->
     <div class="page-tab-container neiRong">
       <mt-tab-container class="page-tabbar-tab-container" v-model="active" swipeable>
-        <mt-tab-container-item id="tab-container1" class="content">
+        <mt-tab-container-item id="tab-container1" class="contents">
             <!-- 左边滚动导航栏 -->
           <ul class="list" style="overflow-y:scroll;overflow-x:hidden">
             <li
@@ -1417,6 +1417,30 @@ export default {
   .item {
     display: inline-block;
   }
+
+.nav {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  height: 46px;
+  padding:0 10px;
+  text-align: center;
+  line-height: 46px;
+  z-index: 100;
+}
+.nav-btn {
+  display: inline-block;
+  margin: 0 5px;
+  border: 0px;
+  color: black;
+  background: #fff;
+  box-shadow: none;
+  &:active {
+    color: black;
+    border-bottom: 2px solid #000;
+  }
+}
+
   li {
     list-style: none;
   }
@@ -1456,32 +1480,12 @@ export default {
   display: inline-block;
 }
 
-.nav {
-  position: fixed;
-  top: 50px;
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-  background: #fff;
-  z-index: 100;
-}
-.nav-btn {
-  display: inline-block;
-  margin: 0 5px;
-  border: 0px;
-  color: black;
-  background: #fff;
-  box-shadow: none;
-  &:active {
-    color: black;
-    border-bottom: 2px solid #000;
-  }
-}
+
 .neiRong {
   flex: 1;
   margin-top: 53px;
   overflow: hidden;
-  .content {
+  .contents {
     flex: 1;
     margin-top: 0px;
     margin-bottom: 40px;
