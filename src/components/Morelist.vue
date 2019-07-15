@@ -89,7 +89,7 @@ export default {
               pic: require("../assets/img/jiaju1.jpg"),
               title: "瞬间置身森林的车用净化器",
               topic: "净化除菌 提高车内空气质量 【两色可选】",
-              brief: "释放大量负离子 如置身森林一般",
+              brief: "释放大量负离子 如置身森林一般，清新空气",
               price: 301,
               Orig: ""
             },
@@ -150,7 +150,7 @@ export default {
               pic: require("../assets/img/jiaju1.jpg"),
               title: "瞬间置身森林的车用净化器",
               topic: "净化除菌 提高车内空气质量 【两色可选】",
-              brief: "释放大量负离子 如置身森林一般",
+              brief: "释放大量负离子 如置身森林一般，清新空气",
               price: 301,
               Orig: ""
             },
@@ -262,7 +262,8 @@ export default {
             }
           ],
           more: "查看更多>"
-        },{
+        },
+        {
           id: 3,
           tip: "美食",
           contents: [
@@ -347,9 +348,9 @@ export default {
       font-size: 22px;
     }
     .ppt {
-      width: 45%;
+      width: 48%;
       float: left;
-      margin: 5px 9px;
+      margin: 5px 0px 5px 5px;
       background-color: white;
       img {
         width: 100%;

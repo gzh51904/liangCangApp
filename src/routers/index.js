@@ -17,6 +17,7 @@ import Settings from "../pages/Settings";
 import Order from "../pages/Order";
 import Login from "../pages/Login";
 import Morelogin from "../pages/Morelogin";
+import Details from "../components/Details/Details"
 
 
 
@@ -35,7 +36,7 @@ import Subsearch from '../components/Subpages/Subsearch';
 
 // order
 let All = {
-    template : `<div class="orderOne">
+    template: `<div class="orderOne">
                     <img src="../img/dingdan.png" alt="">
                     <p v-for="item in selected" :key="item.name">{{item.name}}</p>
                 </div>`
@@ -48,32 +49,55 @@ let router = new VueRouter({
         {
             name: 'Shop',
             path: '/shop',//当浏览器地址为#/shop时，渲染Shop组件
-            component: Shop
+            component: Shop,
+            meta: {
+                keepAlive: true//导航栏在该页面显示
+            }
+        },
+        // 重定向
+        {
+            path: '/shop',
+            redirect: { name: 'Shop' }
         },
         {
             name: 'Discover',
             path: '/discover',
-            component: Discover
+            component: Discover,
+            meta: {
+                keepAlive: true//导航栏在该页面显示
+            }
         },
         {
             name: 'Magazine',
             path: '/magazine',
-            component: Magazine
+            component: Magazine,
+            meta: {
+                keepAlive: true//导航栏在该页面显示
+            }
         },
         {
             name: 'Cart',
             path: '/cart',
-            component: Cart
+            component: Cart,
+            meta: {
+                keepAlive: true//导航栏在该页面显示
+            }
         },
         {
             name: 'Mine',
             path: '/mine',
-            component: Mine
+            component: Mine,
+            meta: {
+                keepAlive: true//导航栏在该页面显示
+            }
         },
         {
             name: 'Searcher',
             path: '/searcher',
-            component: Searcher
+            component: Searcher,
+            meta: {
+                keepAlive: false//导航栏在该页面显示
+            }
         },
         {
             name: 'Settings',
@@ -114,17 +138,31 @@ let router = new VueRouter({
                     component: Acc
                 }
             ]
-            
+
         },
         {
             name: 'Pinpai',
             path: '/pinpai',
-            component: Pinpai
-        }
-        ,{
+            component: Pinpai,
+            meta: {
+                keepAlive: false//导航栏在该页面不予显示
+            }
+        },
+        {
             name: 'Subsearch',
             path: '/subsearch',
-            component: Subsearch
+            component: Subsearch,
+            meta: {
+                keepAlive: false//导航栏在该页面不予显示
+            }
+        },
+        {
+            name: 'Details',
+            path: '/details',
+            component: Details,
+            meta: {
+                keepAlive: false//导航栏在该页面不予显示
+            }
         }
     ]
 })
