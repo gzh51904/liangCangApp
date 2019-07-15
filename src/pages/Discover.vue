@@ -1,7 +1,7 @@
 <template>
   <div class="discover">
     <router-link class="header" head to="/subsearch">
-      <mt-button class="button" size="large" @click.native="handleClick">
+      <mt-button class="button" size="large" @click.native.prevent="handleClick">
         <i class="mint-toast-icon mintui mintui-search"></i>
         清凉
       </mt-button>

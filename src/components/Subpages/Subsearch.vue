@@ -2,7 +2,7 @@
   <div id="searchpages">
     <div class="mint_ui">
       <router-link tag="p" to="/Shop">
-        <i class="mint-toast-icon mintui mintui-back" @click.native.prevent="back(path)"></i>
+        <i class="mint-toast-icon mintui mintui-back" @click.native.prevent="back"></i>
       </router-link>
       <mt-search v-model="value" cancel-text="取消" placeholder="清凉">
         <i class="mint-toast-icon mintui mintui-search"></i>
@@ -61,12 +61,14 @@ export default {
     };
   },
   methods: {
-    back(path){
-      this.$router.push({path})
+    back() {
+      console.log(this.$router);
+      //   this.$router.push({ path });
+      this.$router.go(-1);
     },
-    created(){
+    created() {
       let hash = window.location.hash.slice(1);
-      this.active=hash;
+      this.active = hash;
     }
   }
 };
@@ -102,12 +104,12 @@ body {
   line-height: 60px;
 }
 .mint-searchbar {
-  margin-top: 3px;
   background-color: white;
   width: 100%;
 }
 .mint-searchbar-inner {
   position: relative;
+  height: 39px;
   border: 2px solid black;
 }
 .mint-searchbar-cancel {
@@ -117,7 +119,7 @@ body {
   font-weight: 900;
   position: absolute;
   right: 10px;
-  /* top: 5px; */
+  
 }
 .mint-searchbar-core {
   font-size: 14px;
@@ -141,8 +143,8 @@ body {
   padding: 3px;
   background-color: white;
 }
-.choice span:nth-child(1){
-    margin-left: 0px;
+.choice span:nth-child(1) {
+  margin-left: 0px;
 }
 </style>
 

@@ -494,11 +494,11 @@
                         <div style="margin-left: -8px">
                             <div style="margin-left: 32px;float: left;margin-top: 34px;">
                                 <div>
-                                    <a href="/i/mob_goodslist/?act=category_goodslist&amp;cat_id=01120118">
+                                    <router-link tag="a" to="/list">
                                         <div><img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29503.png" width="60px" height="60px">
                                         </div>
-                                        <div style="text-align: center;margin-top: 7px;font-size: 12px">女装</div>
-                                    </a>
+                                        <router-link tag="div" to="/list" style="text-align: center;margin-top: 7px;font-size: 12px">女装</router-link>
+                                    </router-link>
                                 </div>
                             </div>
                                     
@@ -1094,11 +1094,11 @@
                     <div style="margin-left: -8px">
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
                             <div>
-                                <a href="/i/mob_goodslist/?act=category_goodslist&amp;cat_id=02790270">
+                                <router-link tag="a" to="/details">
                                     <div><img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/30/30017.png" width="60px" height="60px">
                                     </div>
                                     <div style="text-align: center;margin-top: 7px;font-size: 12px">水杯</div>
-                                </a>
+                                </router-link>
                             </div>
                         </div>
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
