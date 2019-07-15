@@ -17,6 +17,7 @@ import Settings from "../pages/Settings";
 import Login from "../pages/Login";
 import Pinpai from "../components/Discover/pinPai";
 import Subsearch from '../components/Subpages/Subsearch';
+import List from "../components/List/list";
 
 
 
@@ -72,6 +73,13 @@ let router = new VueRouter({
             name: 'Subsearch',
             path: '/subsearch',
             component: Subsearch
+        },{
+            name: 'List',
+            path: '/list',
+            component: List,
+            meta:{
+                keepAlive:false
+            }
         }
     ]
 })
