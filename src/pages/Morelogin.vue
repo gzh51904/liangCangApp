@@ -37,6 +37,9 @@
                     <span class="sigma-line-text">Sigma 的中横线</span>
                 </div>
             </div>
+            <div class="loginbottom">
+                
+            </div>
         </div>
     </div>
 </template>
@@ -177,10 +180,10 @@ export default {
         font-size: 10px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
     }
     .sigma-content{
         width: 94%;
-        margin: 50px;
         text-align: center;
         background-color: #fff;
     }
@@ -201,5 +204,9 @@ export default {
         position: relative;
         font-size: 14px;
         font-weight: 500;
+    }
+    .loginbottom{
+        width: 94%;
+        background: #999;
     }
 </style>
