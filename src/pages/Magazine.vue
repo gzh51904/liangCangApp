@@ -61,9 +61,6 @@
           </li>
         </ul>
     </main>
-    <footer>
-      11122
-    </footer>
   </div>
   
 </template>
@@ -91,16 +88,19 @@ ul li{
   flex-direction: column;
 }
 .m_head{
-  height:30px;
+  height:40px;
   width:100%;
   background:#fff;
   display:flex;
   position:fixed;
   top:0;
-  line-height: 30px;
+  line-height: 40px;
 }
 .m_left{
   flex:2;
+  padding:0px 10px;
+  position: absolute;
+
   text-align: center;
 }
 .m_title{
@@ -112,7 +112,7 @@ ul li{
   flex: 1;  
   overflow-x: hidden;
   overflow-y: auto;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .m_main ul{
   column-count: 1;

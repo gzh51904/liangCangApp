@@ -4,59 +4,56 @@
       <h1>我的账号</h1>
       <!-- <p @click="goto()">
                 <i class="iconfont icon-fangdajing"></i>
-      </p>-->
-      <router-link to="/settings" tag="p" :class="this.$route.fullPath==='/settings'?'active':''">
-        <i class="iconfont icon-fangdajing"></i>
-      </router-link>
+            </p> -->
+            <router-link to="/settings" tag="p" :class="this.$route.fullPath==='/settings'?'active':''">
+                <i class="iconfont icon-fangdajing"></i>
+            </router-link>
     </div>
     <div class="M-header">
-      <div class="M-img">
-        <img src="../img/default180.png" alt />
-        <p>
-          <router-link to="/login" tag="span" :class="this.$route.fullPath==='/login'?'active':''">
-            <span>登录</span>/
-          </router-link>
-          <router-link
-            to="/settings"
-            tag="span"
-            :class="this.$route.fullPath==='/settings'?'active':''"
-          >
-            <span>注册</span>
-          </router-link>
-        </p>
-      </div>
-      <div class="M-mine">
-        <ul>
-          <li>
-            <i class="iconfont M-hicon icon-gouwuche"></i>
-            <span>我的订单</span>
-          </li>
-          <li>
-            <i class="iconfont M-hicon icon-qianbao"></i>
-            <span>我的红包</span>
-          </li>
-        </ul>
-      </div>
+        <div class="M-img">
+            <img src="../img/default180.png" alt="">
+            <p>
+                <router-link to="/login" tag="span" :class="this.$route.fullPath==='/login'?'active':''">
+                    <span>登录</span>/
+                </router-link>
+                <router-link to="/settings" tag="span" :class="this.$route.fullPath==='/settings'?'active':''">
+                    <span>注册</span>
+                </router-link>
+                
+            </p>
+        </div>
+        <div class="M-mine">
+            <ul>
+                <router-link to="/order" tag="li" :class="this.$route.fullPath==='/order'?'active':''">
+                    <i class="iconfont M-hicon icon-gouwuche"></i>
+                    <span>我的订单</span>
+                </router-link>
+                <router-link to="/order" tag="li" :class="this.$route.fullPath==='/order'?'active':''">
+                    <i class="iconfont M-hicon icon-gouwuche"></i>
+                    <span>我的红包</span>
+                </router-link>
+            </ul>
+        </div>
     </div>
     <div class="M-forter">
-      <ul>
-        <li>
-          <i class="iconfont M-icon icon-shoucang-copy"></i>
-          <span>我的心愿单</span>
-        </li>
-        <li>
-          <i class="iconfont M-icon icon-xiaoxi"></i>
-          <span>我的心愿单</span>
-        </li>
-        <li>
-          <i class="iconfont M-icon icon-dizhi"></i>
-          <span>我的心愿单</span>
-        </li>
-        <li>
-          <i class="iconfont M-icon icon-kefu"></i>
-          <span>我的心愿单</span>
-        </li>
-      </ul>
+        <ul>
+            <li>
+                <i class="iconfont M-icon icon-shoucang-copy"></i>
+                <span>我的心愿单</span>
+            </li>
+            <li>
+                <i class="iconfont M-icon icon-xiaoxi"></i>
+                <span>我的消息</span>
+            </li>
+            <li>
+                <i class="iconfont M-icon icon-dizhi"></i>
+                <span>地址管理</span>
+            </li>
+            <li>
+                <i class="iconfont M-icon icon-kefu"></i>
+                <span>良仓客服</span>
+            </li>
+        </ul>
     </div>
   </div>
 </template>
@@ -200,6 +197,9 @@ html {
 .M-forter .M-icon {
   font-size: 20px;
   color: #87ceeb;
+}
+.M-forter ul li span{
+  padding-top: 10px;
 }
 </style>
 

@@ -1,6 +1,9 @@
 <template>
   <div class="content">
     <Header />
+    <Nav />
+    <Banner />
+
     <div class="cheap">
       <h3>今日特惠</h3>
       <div class="swiper-container">
@@ -74,6 +77,8 @@
 </template>
 
 <script>
+import Nav from "../components/Nav";
+import Banner from "../components/Banner";
 import Header from "../components/Header";
 import Swiper from "swiper";
 import "swiper/dist/css/swiper.min.css";
@@ -319,7 +324,9 @@ export default {
   },
   components: {
     Header,
-    Morelist
+    Morelist,
+    Banner,
+    Nav
   }
 };
 </script>
@@ -429,5 +436,10 @@ export default {
       border-bottom: 1px solid #ccc;
     }
   }
+  
 }
+.hello{
+    background: #ffff;
+    z-index: 300
+  }
 </style>

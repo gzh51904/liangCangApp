@@ -349,7 +349,7 @@ export default {
     .ppt {
       width: 45%;
       float: left;
-      margin: 5px 10px;
+      margin: 5px 9px;
       background-color: white;
       img {
         width: 100%;
@@ -377,11 +377,12 @@ export default {
       width: 100%;
       height: 30px;
       line-height: 30px;
-      padding: 7px 0;
+      padding-bottom: 35px;
       text-align: center;
       font-size: 16px;
       color: #9f9f9f;
       margin-bottom: 30px;
+      margin-top: 10px;
       float: left;
       border-bottom: 1px solid #ccc;
     }
