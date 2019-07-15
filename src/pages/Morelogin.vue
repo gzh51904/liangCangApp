@@ -2,8 +2,8 @@
     <div class="login">
         <div class="loginTop">
             <mt-header class="loginH icon" title="登录">
-                <router-link to="/mine" slot="left">
-                    <mt-button class="icon" icon="back"></mt-button>
+                <router-link to="/login" slot="left">
+                    <mt-button class="icon moreBack" icon="back"></mt-button>
                 </router-link>
             </mt-header>
         </div>
@@ -20,8 +20,7 @@
                 </form>
                 <form class="formTwo formCon" action="">
                     <label for=""><i class="iconfont icon-yanzhengma"></i></label>
-                    <input placeholder="验证码" type="text">
-                    <p>获取验证码</p>
+                    <input placeholder="密码" type="text">
                 </form>
                 <div class="loginL">
                     <span class="loginFont">登录</span>
@@ -32,10 +31,18 @@
             </div> -->
         </div>
         <div class="loginFooter">
-            <div class="loginT">
-                <router-link to="/morelogin" tag="span" :class="this.$route.fullPath==='/morelogin'?'active':''">
-                    更多登录方式 >
-                </router-link>
+            <div class="sigma-content">
+                <div class="sigma-middle-line">
+                    <span class="sigma-line-text">更多登录方式</span>
+                </div>
+            </div>
+            <div class="loginbottom">
+                <ul class="more-login-ul">
+                    <li>哈</li>
+                    <li>哈</li>
+                    <li>哈</li>
+                    <li>哈</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -67,7 +74,6 @@ export default {
         margin: 0;
         display: flex;
         flex-direction: column;
-        background: white;
     }
     .loginTop{
         height: 6%;
@@ -177,10 +183,56 @@ export default {
         flex: 1;
         font-size: 10px;
         display: flex;
-        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 70px;
     }
-    .loginT{
+    .sigma-content{
+        width: 94%;
         text-align: center;
-        margin-top: 80%;
+        background-color: #fff;
+    }
+    .sigma-middle-line:before{
+        content: '';
+        display: block;
+        height: 0.5px;
+        width: 100%;
+        background-color: #999;/*颜色需与主题大背景色一致*/ 
+        position: relative;
+        top: 10px;/*调节线高*/
+        left: 0;
+    }
+    .sigma-line-text{
+        display: inline-block;
+        background: #fff;
+        padding: 0 18px 0 18px;
+        position: relative;
+        font-size: 12px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .loginbottom{
+        width: 94%;
+        height: 100px;
+        /* background: #999; */
+    }
+    .moreBack{
+        font-size: 12px;
+    }
+    .more-login-ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .more-login-ul li{
+        width: 60px;
+        height: 60px;
+        background: #999;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .loginTop .mint-header-button{
+        height: 100%;
     }
 </style>
