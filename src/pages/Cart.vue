@@ -27,7 +27,7 @@
             <div class="grid-content bg-purple bg-purple2">
             <p class="selectnum">
               <span class="ico_sub" @click="changeNum(item,-1)">-</span>
-    					<input type="number" :value="item.number" >
+    					<input type="number" :value="item.number" disabled >
     					<span class="ico_plus" @click="changeNum(item,1)">+</span>
             </p>
             <p style="margin-top:2px;">{{item.title}}</p>
@@ -155,6 +155,19 @@ export default {
         }else{
         item.checked = !item.checked;
         }
+        //如果取消一个商品的选中，全选也取消
+            var itemisChecked = [];
+            console.log(itemisChecked)
+            this.goodslist.forEach(function (item, index){
+                if (item.checked === true ) {
+                    itemisChecked.push(item);
+                }
+            })
+            if (itemisChecked.length === this.goodslist.length ) {
+                this.checkAllFlag = true;
+            }else{
+                this.checkAllFlag = false;
+            }
         this.totalMoney();
       },
       //是否全选
@@ -199,9 +212,19 @@ export default {
           if (action == 'confirm') {
             // 刷新类表
             this.getList(id);
-            // 取消全选
-            this.checkAll(false);
           }
+          var itemisChecked = [];
+            console.log(itemisChecked)
+            this.goodslist.forEach(function (item, index){
+                if (item.checked === true ) {
+                    itemisChecked.push(item);
+                }
+            })
+            if (itemisChecked.length === this.goodslist.length ) {
+                this.checkAllFlag = true;
+            }else{
+                this.checkAllFlag = false;
+            }
         }).catch(error =>{});
       },
       getList(id){
