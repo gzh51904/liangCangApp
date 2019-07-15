@@ -67,6 +67,7 @@ export default {
         margin: 0;
         display: flex;
         flex-direction: column;
+        background: white;
     }
     .loginTop{
         height: 6%;

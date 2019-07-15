@@ -2,8 +2,8 @@
     <div class="login">
         <div class="loginTop">
             <mt-header class="loginH icon" title="登录">
-                <router-link to="/mine" slot="left">
-                    <mt-button class="icon" icon="back"></mt-button>
+                <router-link to="/login" slot="left">
+                    <mt-button class="icon moreBack" icon="back"></mt-button>
                 </router-link>
             </mt-header>
         </div>
@@ -20,8 +20,7 @@
                 </form>
                 <form class="formTwo formCon" action="">
                     <label for=""><i class="iconfont icon-yanzhengma"></i></label>
-                    <input placeholder="验证码" type="text">
-                    <p>获取验证码</p>
+                    <input placeholder="密码" type="text">
                 </form>
                 <div class="loginL">
                     <span class="loginFont">登录</span>
@@ -34,11 +33,16 @@
         <div class="loginFooter">
             <div class="sigma-content">
                 <div class="sigma-middle-line">
-                    <span class="sigma-line-text">Sigma 的中横线</span>
+                    <span class="sigma-line-text">更多登录方式</span>
                 </div>
             </div>
             <div class="loginbottom">
-                
+                <ul class="more-login-ul">
+                    <li>哈</li>
+                    <li>哈</li>
+                    <li>哈</li>
+                    <li>哈</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -179,8 +183,9 @@ export default {
         flex: 1;
         font-size: 10px;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 70px;
     }
     .sigma-content{
         width: 94%;
@@ -190,7 +195,7 @@ export default {
     .sigma-middle-line:before{
         content: '';
         display: block;
-        height: 1px;
+        height: 0.5px;
         width: 100%;
         background-color: #999;/*颜色需与主题大背景色一致*/ 
         position: relative;
@@ -202,11 +207,32 @@ export default {
         background: #fff;
         padding: 0 18px 0 18px;
         position: relative;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: 500;
+        margin-bottom: 10px;
     }
     .loginbottom{
         width: 94%;
+        height: 100px;
+        /* background: #999; */
+    }
+    .moreBack{
+        font-size: 12px;
+    }
+    .more-login-ul{
+        display: flex;
+        justify-content: space-around;
+    }
+    .more-login-ul li{
+        width: 60px;
+        height: 60px;
         background: #999;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .loginTop .mint-header-button{
+        height: 100%;
     }
 </style>
