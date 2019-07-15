@@ -148,10 +148,10 @@ export default {
     }
     .formTwo p{
         font-size: 12px;
-        line-height: 20px;
+        line-height: 25px;
         text-align: center;
         width: 80px;
-        height: 20px;
+        height: 25px;
         border: 1px solid black;
         border-radius: 2px;
     }
