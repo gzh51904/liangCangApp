@@ -40,22 +40,28 @@ export default {
     return {
       selected:[
           {
-              name:'目前没有需要的全部订单哦',
+              name:"a1",
+              title:'目前没有需要的全部订单哦',
           },
           {
-              name:'目前没有需要的待付款订单哦',
+              name:"a2",
+              title:'目前没有需要的待付款订单哦',
           },
           {
-              name:'目前没有需要的代发货订单哦',
+              name:"a3",
+              title:'目前没有需要的代发货订单哦',
           },
           {
-              name:'目前没有需要的已发货订单哦',
+              name:"a4",
+              title:'目前没有需要的已发货订单哦',
           },
           {
-              name:'目前没有需要的待评论订单哦',
+              name:"a5",
+              title:'目前没有需要的待评论订单哦',
           },
           {
-              name:'目前没有需要的售后订单哦',
+              name:"a6",
+              title:'目前没有需要的售后订单哦',
           }
       ]
     };
@@ -94,7 +100,7 @@ export default {
         flex: 1;
     }
     /*  */
-    .myOrderfooterimg{
+    /* .myOrderfooterimg{
 
-    }
+    } */
 </style>

@@ -1,18 +1,28 @@
 <template>
   <div class="discover">
-    <router-link to="/searcher" tag="input" type="text" class="searcher" placeholder="搜索商品、品牌"></router-link>
-    <tab-container />
-    <!-- <ul class="tab"> -->
-    <!-- <li v-for="item in tabs" :key="item.title" :class="item.path==='/shangdian'?'active':''">
-        <a href="###">{{item.title}}</a>
-    </li>-->
-    <!-- <li>
-        <a href="###">商店</a>
-      </li>
-      <li>
-        <a href="###">品牌</a>
-      </li>
-    </ul>-->
+    <!-- <router-link to="/searcher" tag="input" type="text" class="searcher" placeholder="搜索商品、品牌"></router-link>
+    <tab-container />-->
+
+    <!-- 
+    <router-link head to="/seacher">
+      <mt-button size="large" @click.native="handleClick">
+        <i class="mint-toast-icon mintui mintui-search"></i>
+        清凉
+      </mt-button>
+    </router-link>
+    <tab-container />-->
+
+    <router-link class="header" head to="/seacher">
+      <mt-button class="button" size="large" @click.native="handleClick">
+        <i class="mint-toast-icon mintui mintui-search"></i>
+        清凉
+      </mt-button>
+    </router-link>
+
+    <div id="main">
+      <tab-container />
+    </div>
+    <!-- <Foot /> -->
   </div>
 </template>
 
@@ -33,29 +43,10 @@ export default {
           name: "Discover"
         }
       ]
-      //   list: [
-      //     {
-      //       title: "家居",
-      //       name: "Jiaju"
-      //     },
-      //     {
-      //       title: "文具",
-      //       name: "Wenju"
-      //     },
-      //     {
-      //       title: "家居",
-      //       name: "Jiaju"
-      //     },
-      //     {
-      //       title: "文具",
-      //       name: "Wenju"
-      //     }
-      //   ],
     };
   },
   methods: {
-    active() {},
-    selected() {}
+    handleClick() {}
   },
   components: {
     tabContainer
@@ -64,35 +55,57 @@ export default {
 </script>
 
 <style lang="scss">
-.searcher {
-  width: 100%;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  border: 0px;
-  background: #ebe8e8;
-}
-.tab {
-  width: 100%;
-  height: 34px;
+* {
   margin: 0;
   padding: 0;
-  position: fixed;
-  left: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.discover {
   display: flex;
-  justify-content: center;
-  text-align: center;
-  li {
-    list-style: none;
-    float: left;
-    margin: 10px;
-    a {
-      color: #ababab;
-      text-decoration: none;
-      &:active {
-        border-bottom: 2px solid #000;
-      }
+  height: 100%;
+  flex-direction: column;
+  .header,
+  .footer {
+    // position: fixed;
+    display: flex;
+    position: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header {
+    background: #fff;
+    .button {
+      width: 94%;
+      position: fixed;
+      top: -1px;
     }
+  }
+  a {
+    text-decoration: none;
+  }
+  #main {
+    flex: 1;
+    margin-top: 53px;
+    // margin-bottom: 40px;
+    background: pink;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .mint-button {
+    // width: 94%;
+    margin-top: 10px;
+    background-color: #f3f3f3;
+    /* position: relative; */
+  }
+  .mint-button i {
+    display: inline-block;
+    position: absolute;
+    left: 40%;
+    top: 40%;
   }
 }
 </style>

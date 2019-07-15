@@ -2,6 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './routers'
 
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css'
+Vue.use(ElementUI);
+
 // import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 import './assets/iconfont/iconfont.css';
