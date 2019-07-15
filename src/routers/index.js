@@ -15,23 +15,7 @@ import Mine from "../pages/Mine";
 import Searcher from "../components/Searcher/Searcher";
 import Settings from "../pages/Settings";
 import Login from "../pages/Login";
-
-
-
-let Phone = {
-    template: `<div>手机</div>`
-}
-let Computer = {
-    template: `<div>电脑</div>`
-}
-let Tablet = {
-    template: `<div>平板</div>`
-}
-let Acc = {
-    template: `<div>配件</div>`
-}
-
-
+import Pinpai from "../components/Discover/pinPai";
 
 // 3.实例化router并配置参数
 let router = new VueRouter({
@@ -45,28 +29,7 @@ let router = new VueRouter({
         {
             name: 'Discover',
             path: '/discover',
-            component: Discover,
-
-            // 嵌套路由（子路由）
-            children: [
-                {
-                    name: 'Phone',
-                    path: 'phone',
-                    component: Phone
-                }, {
-                    name: 'Computer',
-                    path: 'computer',
-                    component: Computer
-                }, {
-                    name: 'Tablet',
-                    path: 'tablet',
-                    component: Tablet
-                }, {
-                    name: 'Acc',
-                    path: 'acc',
-                    component: Acc
-                }
-            ]
+            component: Discover
         },
         {
             name: 'Magazine',
@@ -97,6 +60,11 @@ let router = new VueRouter({
             name: 'Login',
             path: '/login',
             component: Login
+        },
+        {
+            name: 'Pinpai',
+            path: '/pinpai',
+            component: Pinpai
         }
     ]
 })

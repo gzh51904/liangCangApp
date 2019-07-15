@@ -52,7 +52,7 @@ export default {
   ul {
     background: white;
     margin: 0;
-    padding: 0;
+    padding: 10px 0;
     width: 100%;
     position: fixed;
     bottom: 0;

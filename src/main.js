@@ -8,9 +8,6 @@ import './assets/iconfont/iconfont.css';
 import Mint from 'mint-ui';
 Vue.use(Mint);
 
-
-
-
 // import { Search } from 'mint-ui';
 
 // Vue.component(Search.name, Search);
@@ -19,7 +16,6 @@ Vue.use(Mint);
 // Vue.use(MintUI);
 new Vue({
     render: h => h(App),
-
     // 4.把router实例注入到vue实例中
     router,
     // MintUI

@@ -1,17 +1,5 @@
 <template>
   <div class="discover">
-    <!-- <router-link to="/searcher" tag="input" type="text" class="searcher" placeholder="搜索商品、品牌"></router-link>
-    <tab-container />-->
-
-    <!-- 
-    <router-link head to="/seacher">
-      <mt-button size="large" @click.native="handleClick">
-        <i class="mint-toast-icon mintui mintui-search"></i>
-        清凉
-      </mt-button>
-    </router-link>
-    <tab-container />-->
-
     <router-link class="header" head to="/seacher">
       <mt-button class="button" size="large" @click.native="handleClick">
         <i class="mint-toast-icon mintui mintui-search"></i>
@@ -90,16 +78,12 @@ body {
   #main {
     flex: 1;
     margin-top: 53px;
-    // margin-bottom: 40px;
-    background: pink;
     overflow-y: auto;
     overflow-x: hidden;
   }
-  .mint-button {
-    // width: 94%;
+  button {
     margin-top: 10px;
     background-color: #f3f3f3;
-    /* position: relative; */
   }
   .mint-button i {
     display: inline-block;

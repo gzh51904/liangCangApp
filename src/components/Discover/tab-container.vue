@@ -1,26 +1,31 @@
 <template>
   <div class="tab-container">
+      <!-- nav导航 -->
     <div class="nav">
-      <mt-button size="small" @click.native.prevent="active = 'tab-container1'">商店</mt-button>
-      <mt-button size="small" @click.native.prevent="active = 'tab-container2'">品牌</mt-button>
+      <mt-button class="nav-btn" size="small" @click.native.prevent="active = 'tab-container1'">商店</mt-button>
+      <mt-button class="nav-btn" size="small" @click.native.prevent="active = 'tab-container2'">品牌</mt-button>
     </div>
+    <!-- 内容区 -->
     <div class="page-tab-container neiRong">
       <mt-tab-container class="page-tabbar-tab-container" v-model="active" swipeable>
         <mt-tab-container-item id="tab-container1" class="content">
-          <ul class="list">
+            <!-- 左边滚动导航栏 -->
+          <ul class="list" style="overflow-y:scroll;overflow-x:hidden">
             <li
-              class="tablsit"
+              :class="{'tablsit':true,'font_w': isActive == index}"
               :index="item.path"
               v-for="(item,index) in lists"
               :key="index"
-              @click="hands(index)"
+              @click="hands(index)" 
             >{{item.title}}</li>
             <!-- <div class="view">{{list.title}}</div> -->
           </ul>
+          <!-- 右边对应分类 -->
           <div class="right_list">
             <!-- <p v-for="(item,index) in list" :key="index">{{item.title}}</p> -->
             <div style="overflow-y:scroll;overflow-x:hidden;background-color:#eeeeee" class="view_height">
-                <div style="width:472px;" id="45second" class="right_dev" v-show="ss == 0">
+
+                <div id="45second" class="right_dev" v-show="ss == 0">
                     <a href="http://www.iliangcang.com/i/topicapp/201705251854">
                         <div style="margin-left: 24px;margin-top: 24px;" onclick="categoryBannerClick('45','家居')">
                             <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29359.png" width="252px" height="150px">
@@ -145,7 +150,7 @@
                         </div>
                 </div>
             
-                <div style="width:472px;display: none" id="62second" class="right_dev" v-show="ss == 1">
+                <div style="display: none" id="62second" class="right_dev" v-show="ss == 1">
                     <a href="http://www.iliangcang.com/i/topicapp/201708280009">
                         <div style="margin-left: 24px;margin-top: 24px;" onclick="categoryBannerClick('62','文具')">
                             <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29365.png" width="252px" height="150px">
@@ -217,7 +222,7 @@
                     </div>
                 </div>
             
-                <div style="width:472px;display: none" id="69second" class="right_dev" v-show="ss == 2">
+                <div style="display: none" id="69second" class="right_dev" v-show="ss == 2">
                     <a href="http://www.iliangcang.com/i/topicapp/201708213327">
                         <div style="margin-left: 24px;margin-top: 24px;" onclick="categoryBannerClick('69','数码')">
                             <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29362.png" width="252px" height="150px">
@@ -310,7 +315,7 @@
                     </div>
                 </div>
             
-                <div style="width:472px;display: none" id="77second" class="right_dev" v-show="ss == 3">
+                <div style="display: none" id="77second" class="right_dev" v-show="ss == 3">
                     <a href="http://www.iliangcang.com/i/topicapp/201805244709">
                         <div style="margin-left: 24px;margin-top: 24px;" onclick="categoryBannerClick('77','玩乐')">
                             <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/30/30330.png" width="252px" height="150px">
@@ -353,7 +358,7 @@
                     </div>
                 </div>
             
-                <div style="width:472px;display: none" id="82second" class="right_dev" v-show="ss == 4">
+                <div style="display: none" id="82second" class="right_dev" v-show="ss == 4">
                     <a href="http://www.iliangcang.com/i/topicapp/201805213611">
                         <div style="margin-left: 24px;margin-top: 24px;" onclick="categoryBannerClick('82','餐厨')">
                             <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/30/30331.png" width="252px" height="150px">
@@ -396,7 +401,7 @@
                     </div>
                 </div>
             
-                <div style="width:472px;display: none" id="92second" class="right_dev" v-show="ss == 5">
+                <div style="display: none" id="92second" class="right_dev" v-show="ss == 5">
                     <a href="http://www.iliangcang.com/i/topicapp/201804053433">
                         <div style="margin-left: 24px;margin-top: 24px;" onclick="categoryBannerClick('92','美食')">
                             <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/30/30329.png" width="252px" height="150px">
@@ -479,7 +484,7 @@
                     </div>
                 </div>
             
-                <div style="width:472px;display: none" id="112second" class="right_dev" v-show="ss == 6">
+                <div style="display: none" id="112second" class="right_dev" v-show="ss == 6">
                     <a href="http://www.iliangcang.com/i/topicapp/201712042710">
                         <div style="margin-left: 24px;margin-top: 24px;" onclick="categoryBannerClick('112','服装')">
                             <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29358.png" width="252px" height="150px">
@@ -552,7 +557,7 @@
                     </div>
                 </div>
             
-                <div style="width:472px;display: none" id="129second" class="right_dev" v-show="ss == 7">
+                <div style="display: none" id="129second" class="right_dev" v-show="ss == 7">
                     <a href="http://www.iliangcang.com/i/topicapp/201709210922">
                         <div style="margin-left: 24px;margin-top: 24px;" onclick="categoryBannerClick('129','鞋包')">
                             <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29366.png" width="252px" height="150px">
@@ -645,7 +650,7 @@
                     </div>
                 </div>
                 
-                <div style="width:472px;display: none" id="141second" class="right_dev" v-show="ss == 8">
+                <div style="display: none" id="141second" class="right_dev" v-show="ss == 8">
                     <a href="http://www.iliangcang.com/i/topicapp/201708104904">
                         <div style="margin-left: 24px;margin-top: 24px;" onclick="categoryBannerClick('141','配饰')">
                             <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29361.png" width="252px" height="150px">
@@ -737,7 +742,7 @@
                     </div>
                 </div>
             
-                <div style="width:472px;display: none" id="154second" class="right_dev" v-show="ss == 9">
+                <div style="display: none" id="154second" class="right_dev" v-show="ss == 9">
                     <a href="http://www.iliangcang.com/i/topicapp/201709303824">
                         <div style="margin-left: 24px;margin-top: 24px;" onclick="categoryBannerClick('154','美护')">
                             <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29360.png" width="252px" height="150px">
@@ -901,7 +906,7 @@
                     </div>
                 </div>
             
-                <div style="width:472px;display: none" id="166second" class="right_dev" v-show="ss == 10">
+                <div style="display: none" id="166second" class="right_dev" v-show="ss == 10">
                     <a href="http://www.iliangcang.com/i/topicapp/201801084956">
                         <div style="margin-left: 24px;margin-top: 24px;" onclick="categoryBannerClick('166','出行')">
                             <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29357.png" width="252px" height="150px">
@@ -963,7 +968,7 @@
                     </div>
                 </div>
             
-                <div style="width:472px;display: none" id="182second" class="right_dev" v-show="ss == 11">
+                <div style="display: none" id="182second" class="right_dev" v-show="ss == 11">
                     <a href="http://www.iliangcang.com/i/topicapp/201712254959">
                         <div style="margin-left: 24px;margin-top: 24px;" onclick="categoryBannerClick('182','图书')">
                                 <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29363.png" width="252px" height="150px" > 
@@ -1026,7 +1031,7 @@
                     </div>
                 </div>
             
-                <div style="width:472px;display: none" id="214second" class="right_dev" v-show="ss == 12">
+                <div style="display: none" id="214second" class="right_dev" v-show="ss == 12">
                     <a href="http://www.iliangcang.com/i/topicapp/201704074130">
                             <div style="margin-left: 24px;margin-top: 24px;" onclick="categoryBannerClick('214','艺术')">
                             <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29367.png" width="252px" height="150px">
@@ -1079,7 +1084,7 @@
                     </div>
                 </div>
             
-                <div style="width:472px;display: none" id="279second" class="right_dev" v-show="ss == 13">
+                <div style="display: none" id="279second" class="right_dev" v-show="ss == 13">
                     <a href="">
                         <div style="margin-left: 24px;margin-top: 24px;" onclick="categoryBannerClick('279','水具')">
                             <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/30/30294.png" width="252px" height="150px">
@@ -1170,7 +1175,7 @@
                     </div>
                 </div>
             
-                <div style="width:472px;display: none" id="358second" class="right_dev" v-show="ss == 14">
+                <div style="display: none" id="358second" class="right_dev" v-show="ss == 14">
                     <a href="">
                         <div style="margin-left: 24px;margin-top: 24px;" onclick="categoryBannerClick('358','运动')">
                             <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/30/30296.png" width="252px" height="150px">
@@ -1226,11 +1231,15 @@
                 </div>
             </div>
         </mt-tab-container-item>
-
+        <!-- 品牌nav -->
         <mt-tab-container-item id="tab-container2" class="content">
+            <!--品牌分类list  -->
           <ul class="pinPai">
-            <li class="tablsit" v-for="item in pinPais" :key="item.title">{{item.title}}</li>
-            <!-- <mt-cell v-for="n in 5" title="tab-container 2" :key="n"></mt-cell> -->
+            <router-link :to="{path:'/pinPai',query: {imgurl:pinPais[index].imgurl,title:pinPais[index].title}}" tag="li" class="tablsit" v-for="(item,index) in pinPais" :key="index" >
+                <img class="ppimg" :src="item.imgurl" alt="">
+                <span>{{item.title}}</span>
+                <input class="gt" type="button" value="&gt;">
+            </router-link>
           </ul>
         </mt-tab-container-item>
       </mt-tab-container>
@@ -1304,53 +1313,99 @@ export default {
           title: "运动",
           name: "yunDong"
         }
-      ],
+        ],
       pinPais: [
         {
-          title: "猫壹Necoichi1"
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1633.jpg",
+            title: "oceanrich欧新力奇"
         },
         {
-          title: "猫壹Necoichi2"
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1632.jpg",
+            title: "REFA"
         },
         {
-          title: "猫壹Necoichi3"
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1631.jpg",
+            title: "猫壹Necoichi"
         },
         {
-          title: "猫壹Necoichi4"
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1630.jpg",
+          title: "XESS埃克塞斯"
         },
         {
-          title: "猫壹Necoichi5"
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1629.jpg",
+            title: "虫虫特供队"
         },
         {
-          title: "猫壹Necoichi6"
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1628.jpg",
+            title: "muid"
         },
         {
-          title: "猫壹Necoichi7"
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1623.jpg",
+            title: "JENNIFER LYRA"
         },
         {
-          title: "猫壹Necoichi8"
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1627.jpg",
+            title: "得体deti"
         },
         {
-          title: "猫壹Necoichi9"
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1626.jpg",
+            title: "soodo上朵"
         },
         {
-          title: "猫壹Necoichi10"
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1622.jpg",
+            title: "康宝娜"
         },
         {
-          title: "猫壹Necoichi11"
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1625.jpg",
+            title: "LivingProof"
         },
         {
-          title: "猫壹Necoichi12"
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1624.jpg",
+            title: "Brickspower"
+        },
+        {
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1621.jpg",
+            title: "盐木丰果"
+        },
+        {
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1620.jpg",
+            title: "北鼎"
+        },
+        {
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1619.jpg",
+            title: "一默"
+        },
+        {
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1618.jpg",
+            title: "菓然匠子"
+        },
+        {
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1617.jpg",
+            title: "ASVEL"
+        },
+        {
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1616.jpg",
+            title: "Lemnos"
+        },
+        {
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1615.jpg",
+            title: "NULINE"
+        },
+        {
+            imgurl:"https://imgs-qn.iliangcang.com/ware/brand/1614.jpg",
+            title: "EVO"
         }
       ],
       active: "tab-container1",
-      ss: 0
+      ss: 0,
+      isActive: 0
     };
   },
   methods: {
     hands(i) {
       this.ss = i;
-    }
+      this.isActive = i;
+    },
   }
 };
 </script>
@@ -1371,6 +1426,7 @@ export default {
   }
   .list {
     width: 30%;
+    height: 570px;
     float: left;
     overflow-y: auto;
     overflow-x: hidden;
@@ -1380,13 +1436,17 @@ export default {
       line-height: 40px;
       background: #f5f5f5;
     }
+    .font_w{
+        font-weight: bold;
+        color: black;
+    }
   }
   .pinPai {
     width: 100%;
     li {
       width: 100%;
       height: 80px;
-      background: pink;
+      background: #FFF;
       text-align: center;
       line-height: 80px;
     }
@@ -1403,8 +1463,9 @@ export default {
   padding: 10px;
   text-align: center;
   background: #fff;
+  z-index: 100;
 }
-button {
+.nav-btn {
   display: inline-block;
   margin: 0 5px;
   border: 0px;
@@ -1420,13 +1481,9 @@ button {
   flex: 1;
   margin-top: 53px;
   overflow: hidden;
-  //   margin-bottom: 40px;
-  //   background: pink;
-  //   overflow-y: auto;
-  //   overflow-x: hidden;
   .content {
     flex: 1;
-    margin-top: 4px;
+    margin-top: 0px;
     margin-bottom: 40px;
     background: #eeeeee;
     overflow-y: auto;
@@ -1438,13 +1495,40 @@ button {
   background: #fff;
 }
 .right_list {
-  width: 70%;
-  background-color: #58bc58;
-  float: right;
-  overflow: hidden;
+    width: 70%;
+    height: 570px;
+    float: right;
+    overflow-y: scroll;
+    .view_height{
+        .right_dev{
+            width:472px;
+        }
+    }
 }
 a {
     text-decoration: none;
     color: black;
+}
+.pinPai{
+    position: relative;
+    .ppimg{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        // margin-top: 10px;
+        left: 20px;
+    }
+    .gt{
+        position: absolute;
+        right: 20px;
+        width: 20px;
+        height: 80px;
+        font-size: 24px;
+        border: 0;
+        box-shadow: none;
+        color: #292626;
+        background-color: #ffffff
+    }
 }
 </style>
