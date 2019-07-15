@@ -104,12 +104,12 @@ body {
   line-height: 60px;
 }
 .mint-searchbar {
-  margin-top: 3px;
   background-color: white;
   width: 100%;
 }
 .mint-searchbar-inner {
   position: relative;
+  height: 39px;
   border: 2px solid black;
 }
 .mint-searchbar-cancel {
@@ -119,7 +119,7 @@ body {
   font-weight: 900;
   position: absolute;
   right: 10px;
-  /* top: 5px; */
+  
 }
 .mint-searchbar-core {
   font-size: 14px;

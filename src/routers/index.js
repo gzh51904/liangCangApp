@@ -33,6 +33,7 @@ let Acc = {
 }
 import Pinpai from "../components/Discover/pinPai";
 import Subsearch from '../components/Subpages/Subsearch';
+import List from "../components/List/list";
 
 // order
 let All = {

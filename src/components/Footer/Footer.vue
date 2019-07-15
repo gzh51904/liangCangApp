@@ -24,7 +24,9 @@
           <span>杂志</span>
         </router-link>
         <router-link to="/cart" tag="li" :class="this.$route.fullPath==='/cart'?'active':''">
-          <i class="iconfont icon-gouwuche"></i>
+          <el-badge :value="1" class="item" type="primary">
+            <i class="iconfont icon-gouwuche"></i>
+          </el-badge>
           <span>购物车</span>
         </router-link>
         <router-link to="/mine" tag="li" :class="this.$route.fullPath==='/mine'?'active':''">

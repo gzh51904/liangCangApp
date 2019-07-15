@@ -196,7 +196,7 @@ html {
 }
 .M-forter .M-icon {
   font-size: 20px;
-  color: #87ceeb;
+  color: #4F6AC3;
 }
 .M-forter ul li span{
   padding-top: 10px;
