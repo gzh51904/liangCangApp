@@ -35,36 +35,43 @@
                         <div style="margin-left: -8px">
                             <div style="margin-left: 32px;float: left;margin-top: 34px;">
                                 <div>
-                                    <a href="/i/mob_goodslist/?act=category_goodslist&amp;cat_id=00450248">
+                                    <router-link tag="a" to="/cloth">
                                         <div>
                                             <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29422.png" width="60px" height="60px">
                                         </div>
                                         <div style="text-align: center;margin-top: 7px;font-size: 12px">家具</div>
-                                    </a>
+                                    </router-link>
                                 </div>
                             </div>
                             <div style="margin-left: 32px;float: left;margin-top: 34px;">
                                 <div>
-                                    <a href="/i/mob_goodslist/?act=category_goodslist&amp;cat_id=00450047">
+                                    <router-link tag="a" to="/cloth">
                                         <div>
                                             <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29425.png" width="60px" height="60px">
                                         </div>
                                         <div style="text-align: center;margin-top: 7px;font-size: 12px">居家日用</div>
-                                    </a>
+                                    </router-link>
                                 </div>
                             </div>
                             <div style="margin-left: 32px;float: left;margin-top: 34px;">
                                 <div>
-                                    <a href="/i/mob_goodslist/?act=category_goodslist&amp;cat_id=00450046">
+                                    <router-link tag="a" to="/cloth">
                                         <div>
                                             <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29429.png" width="60px" height="60px">
                                         </div>
                                         <div style="text-align: center;margin-top: 7px;font-size: 12px">装饰摆件</div>
-                                    </a>
+                                    </router-link>
                                 </div>
                             </div>
                             <div style="margin-left: 32px;float: left;margin-top: 34px;">
-                                <div><a href="/i/mob_goodslist/?act=category_goodslist&amp;cat_id=00450048"><div><img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29427.png" width="60px" height="60px"></div><div style="text-align: center;margin-top: 7px;font-size: 12px">香薰香氛</div></a></div>
+                                <div>
+                                    <router-link tag="a" to="/cloth">
+                                        <div>
+                                            <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29427.png" width="60px" height="60px">
+                                        </div>
+                                        <div style="text-align: center;margin-top: 7px;font-size: 12px">香薰香氛</div>
+                                    </router-link>
+                                    </div>
                             </div>
                             <div style="margin-left: 32px;float: left;margin-top: 34px;">
                                 <div>
@@ -88,12 +95,12 @@
                             </div>
                             <div style="margin-left: 32px;float: left;margin-top: 34px;">
                                 <div>
-                                    <a href="/i/mob_goodslist/?act=category_goodslist&amp;cat_id=00450051">
+                                    <router-link tag="a" to="/cloth">
                                         <div>
                                             <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29419.png" width="60px" height="60px">
                                         </div>
                                         <div style="text-align: center;margin-top: 7px;font-size: 12px">床品布艺</div>
-                                    </a>
+                                    </router-link>
                                 </div>
                             </div>
                             <div style="margin-left: 32px;float: left;margin-top: 34px;">
@@ -118,12 +125,12 @@
                             </div>
                             <div style="margin-left: 32px;float: left;margin-top: 34px;">
                                 <div>
-                                    <a href="/i/mob_goodslist/?act=category_goodslist&amp;cat_id=00450053">
+                                    <router-link tag="a" to="/cloth">
                                         <div>
                                             <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29420.png" width="60px" height="60px">
                                         </div>
                                         <div style="text-align: center;margin-top: 7px;font-size: 12px">灯具</div>
-                                    </a> 
+                                    </router-link>
                                 </div>
                             </div>
                             <div style="margin-left: 32px;float: left;margin-top: 34px;">
@@ -160,22 +167,22 @@
                     <div style="margin-left: -8px">
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
                             <div>
-                                <a href="/i/mob_goodslist/?act=category_goodslist&amp;cat_id=00620063">
+                                <router-link tag="a" to="/cloth">
                                     <div>
                                         <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29450.png" width="60px" height="60px">
                                     </div>
                                     <div style="text-align: center;margin-top: 7px;font-size: 12px">办公用品</div>
-                                </a>
+                                </router-link>
                             </div>
                         </div>
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
                             <div>
-                                <a href="/i/mob_goodslist/?act=category_goodslist&amp;cat_id=00620064">
+                                <router-link tag="a" to="/cloth">
                                     <div>
                                         <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29455.png" width="60px" height="60px">
                                     </div>
                                     <div style="text-align: center;margin-top: 7px;font-size: 12px">纸本</div>
-                                </a>
+                               </router-link >
                             </div>
                         </div>
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
@@ -232,22 +239,22 @@
                     <div style="margin-left: -8px">
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
                             <div>
-                                <a href="/i/mob_goodslist/?act=category_goodslist&amp;cat_id=00690070">
+                                <router-link tag="a" to="/cloth">
                                     <div>
                                         <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29468.png" width="60px" height="60px">
                                     </div>
                                     <div style="text-align: center;margin-top: 7px;font-size: 12px">耳机</div>
-                                </a>
+                                </router-link> 
                             </div>
                         </div>
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
                             <div>
-                                <a href="/i/mob_goodslist/?act=category_goodslist&amp;cat_id=00690071">
+                                <router-link tag="a" to="/cloth">
                                     <div>
                                         <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29473.png" width="60px" height="60px">
                                     </div>
                                     <div style="text-align: center;margin-top: 7px;font-size: 12px">音箱</div>
-                                </a>
+                                </router-link>
                             </div>
                         </div>
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
@@ -262,12 +269,12 @@
                         </div>
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
                             <div>
-                                <a href="/i/mob_goodslist/?act=category_goodslist&amp;cat_id=00690074">
+                                <router-link tag="a" to="/cloth">
                                     <div>
                                         <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29470.png" width="60px" height="60px">
                                     </div>
                                     <div style="text-align: center;margin-top: 7px;font-size: 12px">手机配件</div>
-                                </a>
+                                </router-link>
                             </div>
                         </div>
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
@@ -292,12 +299,12 @@
                         </div>
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
                             <div>
-                                <a href="/i/mob_goodslist/?act=category_goodslist&amp;cat_id=00690244">
+                                <router-link tag="a" to="/cloth">
                                     <div>
                                         <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29467.png" width="60px" height="60px">
                                     </div>
                                     <div style="text-align: center;margin-top: 7px;font-size: 12px">电脑配件</div>
-                                </a>
+                               </router-link>
                             </div>
                         </div>
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
@@ -325,22 +332,22 @@
                     <div style="margin-left: -8px">
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
                             <div>
-                                <a href="/i/mob_goodslist/?act=category_goodslist&amp;cat_id=00770078">
+                                <router-link tag="a" to="/cloth">
                                     <div>
                                         <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29457.png" width="60px" height="60px">
                                     </div>
                                     <div style="text-align: center;margin-top: 7px;font-size: 12px">玩具</div>
-                                </a>
+                                </router-link>
                             </div>
                         </div>
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
                             <div>
-                                <a href="/i/mob_goodslist/?act=category_goodslist&amp;cat_id=00770079">
+                               <router-link tag="a" to="/cloth">
                                     <div>
                                         <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29458.png" width="60px" height="60px">
                                     </div>
                                     <div style="text-align: center;margin-top: 7px;font-size: 12px">玩偶</div>
-                                </a>
+                                </router-link>
                             </div>
                         </div>
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
@@ -368,12 +375,12 @@
                     <div style="margin-left: -8px">
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
                             <div>
-                                <a href="/i/mob_goodslist/?act=category_goodslist&amp;cat_id=00820089">
+                                <router-link tag="a" to="/cloth">
                                     <div>
                                         <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29513.png" width="60px" height="60px">
                                     </div>
                                     <div style="text-align: center;margin-top: 7px;font-size: 12px">厨房清洁</div>
-                                </a>
+                                </router-link>
                            </div>
                         </div>
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
@@ -411,12 +418,12 @@
                     <div style="margin-left: -8px">
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
                             <div>
-                                <a href="/i/mob_goodslist/?act=category_goodslist&amp;cat_id=00920093">
+                                <router-link tag="a" to="/cloth">
                                     <div>
                                         <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29433.png" width="60px" height="60px">
                                     </div>
                                     <div style="text-align: center;margin-top: 7px;font-size: 12px">美酒</div>
-                                </a>
+                                </router-link>
                             </div>
                         </div>
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
@@ -441,12 +448,12 @@
                         </div>
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
                             <div>
-                                <a href="/i/mob_goodslist/?act=category_goodslist&amp;cat_id=00920098">
+                                <router-link tag="a" to="/cloth">
                                     <div>
                                         <img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29434.png" width="60px" height="60px">
                                     </div>
                                     <div style="text-align: center;margin-top: 7px;font-size: 12px">咖啡</div>
-                                </a>
+                                </router-link>
                             </div>
                         </div>
                         <div style="margin-left: 32px;float: left;margin-top: 34px;">
@@ -494,10 +501,10 @@
                         <div style="margin-left: -8px">
                             <div style="margin-left: 32px;float: left;margin-top: 34px;">
                                 <div>
-                                    <router-link tag="a" to="/list">
+                                    <router-link tag="a" to="/cloth">
                                         <div><img src="https://imgs-qn.iliangcang.com/ware/sowhatimg/ware/orig/2/29/29503.png" width="60px" height="60px">
                                         </div>
-                                        <router-link tag="div" to="/list" style="text-align: center;margin-top: 7px;font-size: 12px">女装</router-link>
+                                        <div style="text-align: center;margin-top: 7px;font-size: 12px">女装</div>
                                     </router-link>
                                 </div>
                             </div>
