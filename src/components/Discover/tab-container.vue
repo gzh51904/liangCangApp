@@ -1426,7 +1426,6 @@ export default {
   padding:0 10px;
   text-align: center;
   line-height: 46px;
-  background: red;
   z-index: 100;
 }
 .nav-btn {
