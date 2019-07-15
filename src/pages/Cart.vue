@@ -27,8 +27,8 @@
             <div class="grid-content bg-purple bg-purple2">
             <p class="selectnum">
               <span class="ico_sub" @click="changeNum(item,-1)">-</span>
-    					<input type="number" :value="item.number" disabled >
-    					<span class="ico_plus" @click="changeNum(item,1)">+</span>
+              <input type="number" :value="item.number" disabled >
+              <span class="ico_plus" @click="changeNum(item,1)">+</span>
             </p>
             <p style="margin-top:2px;">{{item.title}}</p>
             <p class="price">{{(item.price).toFixed(2)}}</p>
@@ -202,7 +202,7 @@ export default {
         });
       },
       // 删除商品
-		  remove(id,index){
+      remove(id,index){
         MessageBox.confirm('',{
           title:'',
           message:'确定删除该商品吗？',
@@ -421,7 +421,7 @@ html,body{
     transition:background-color ease 0.1s;
   }
   .tui-checked {
-	background:#1673ff
+  background:#1673ff
   }
   .tui-checked::after {
     content:'';
