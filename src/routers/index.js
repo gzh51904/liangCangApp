@@ -28,27 +28,42 @@ let router = new VueRouter({
         {
             name: 'Shop',
             path: '/shop',//当浏览器地址为#/shop时，渲染Shop组件
-            component: Shop
+            component: Shop,
+            meta: {
+                keepAlive: true
+            }
         },
         {
             name: 'Discover',
             path: '/discover',
-            component: Discover
+            component: Discover,
+            meta: {
+                keepAlive: true
+            }
         },
         {
             name: 'Magazine',
             path: '/magazine',
-            component: Magazine
+            component: Magazine,
+            meta: {
+                keepAlive: true
+            }
         },
         {
             name: 'Cart',
             path: '/cart',
-            component: Cart
+            component: Cart,
+            meta: {
+                keepAlive: true
+            }
         },
         {
             name: 'Mine',
             path: '/mine',
-            component: Mine
+            component: Mine,
+            meta: {
+                keepAlive: true
+            }
         },
         {
             name: 'Searcher',
@@ -73,12 +88,12 @@ let router = new VueRouter({
             name: 'Subsearch',
             path: '/subsearch',
             component: Subsearch
-        },{
+        }, {
             name: 'List',
             path: '/list',
             component: List,
-            meta:{
-                keepAlive:false
+            meta: {
+                keepAlive: false
             }
         }
     ]
