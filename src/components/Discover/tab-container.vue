@@ -1417,6 +1417,31 @@ export default {
   .item {
     display: inline-block;
   }
+
+.nav {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  height: 46px;
+  padding:0 10px;
+  text-align: center;
+  line-height: 46px;
+  background: red;
+  z-index: 100;
+}
+.nav-btn {
+  display: inline-block;
+  margin: 0 5px;
+  border: 0px;
+  color: black;
+  background: #fff;
+  box-shadow: none;
+  &:active {
+    color: black;
+    border-bottom: 2px solid #000;
+  }
+}
+
   li {
     list-style: none;
   }
@@ -1456,27 +1481,7 @@ export default {
   display: inline-block;
 }
 
-.nav {
-  position: fixed;
-  top: 50px;
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-  background: #fff;
-  z-index: 100;
-}
-.nav-btn {
-  display: inline-block;
-  margin: 0 5px;
-  border: 0px;
-  color: black;
-  background: #fff;
-  box-shadow: none;
-  &:active {
-    color: black;
-    border-bottom: 2px solid #000;
-  }
-}
+
 .neiRong {
   flex: 1;
   margin-top: 53px;

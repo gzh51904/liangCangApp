@@ -1,6 +1,6 @@
 <template>
   <div class="discover">
-    <router-link class="header" head to="/seacher">
+    <router-link class="header" head to="/subsearch">
       <mt-button class="button" size="large" @click.native="handleClick">
         <i class="mint-toast-icon mintui mintui-search"></i>
         清凉
@@ -55,6 +55,7 @@ body {
 .discover {
   display: flex;
   height: 100%;
+  background: #fff;
   flex-direction: column;
   .header,
   .footer {
@@ -88,8 +89,8 @@ body {
   .mint-button i {
     display: inline-block;
     position: absolute;
-    left: 40%;
-    top: 40%;
+    left: 35%;
+    top: -15%;
   }
 }
 </style>
