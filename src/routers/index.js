@@ -16,6 +16,9 @@ import Searcher from "../components/Searcher/Searcher";
 import Settings from "../pages/Settings";
 import Login from "../pages/Login";
 import Pinpai from "../components/Discover/pinPai";
+import Subsearch from '../components/Subpages/Subsearch';
+
+
 
 // 3.实例化router并配置参数
 let router = new VueRouter({
@@ -65,6 +68,10 @@ let router = new VueRouter({
             name: 'Pinpai',
             path: '/pinpai',
             component: Pinpai
+        }, {
+            name: 'Subsearch',
+            path: '/subsearch',
+            component: Subsearch
         }
     ]
 })
