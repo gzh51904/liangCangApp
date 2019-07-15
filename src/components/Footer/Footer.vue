@@ -49,6 +49,8 @@ export default {
 <style scoped lang="scss">
 .hello {
   position: fixed;
+  //   background: #fff;
+  //   z-index: 300;
   ul {
     background: white;
     margin: 0;

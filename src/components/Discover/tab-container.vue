@@ -8,7 +8,7 @@
     <!-- 内容区 -->
     <div class="page-tab-container neiRong">
       <mt-tab-container class="page-tabbar-tab-container" v-model="active" swipeable>
-        <mt-tab-container-item id="tab-container1" class="content">
+        <mt-tab-container-item id="tab-container1" class="contents">
             <!-- 左边滚动导航栏 -->
           <ul class="list" style="overflow-y:scroll;overflow-x:hidden">
             <li
@@ -1481,7 +1481,7 @@ export default {
   flex: 1;
   margin-top: 53px;
   overflow: hidden;
-  .content {
+  .contents {
     flex: 1;
     margin-top: 0px;
     margin-bottom: 40px;

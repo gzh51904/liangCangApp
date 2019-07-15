@@ -1,8 +1,8 @@
 <template>
   <div class="discover">
-    <router-link class="header" head to="/seacher">
+    <router-link class="header1" head to="/subsearch">
       <mt-button class="button" size="large" @click.native="handleClick">
-        <i class="mint-toast-icon mintui mintui-search"></i>
+        <i class="mint-toast-icon mintui mintui-search fangdajing"></i>
         清凉
       </mt-button>
     </router-link>
@@ -56,7 +56,7 @@ body {
   display: flex;
   height: 100%;
   flex-direction: column;
-  .header,
+  .header1,
   .footer {
     // position: fixed;
     display: flex;
@@ -64,7 +64,7 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .header {
+  .header1 {
     background: #fff;
     .button {
       width: 94%;
@@ -85,7 +85,7 @@ body {
     margin-top: 10px;
     background-color: #f3f3f3;
   }
-  .mint-button i {
+  .fangdajing {
     display: inline-block;
     position: absolute;
     left: 40%;
