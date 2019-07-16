@@ -12,6 +12,9 @@ import './assets/iconfont/iconfont.css';
 import Mint from 'mint-ui';
 Vue.use(Mint);
 
+import axios from 'axios';
+Vue.prototype.$axios = axios;
+
 new Vue({
     render: h => h(App),
     // 4.把router实例注入到vue实例中

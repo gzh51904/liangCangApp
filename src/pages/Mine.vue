@@ -2,9 +2,6 @@
   <div class="M-app">
     <div class="M-top">
       <h1>我的账号</h1>
-      <!-- <p @click="goto()">
-                <i class="iconfont icon-fangdajing"></i>
-            </p> -->
             <router-link to="/settings" tag="p" :class="this.$route.fullPath==='/settings'?'active':''">
                 <i class="iconfont icon-fangdajing"></i>
             </router-link>
@@ -12,14 +9,13 @@
     <div class="M-header">
         <div class="M-img">
             <img src="../img/default180.png" alt="">
-            <p>
+            <p v-html="datas">
                 <router-link to="/login" tag="span" :class="this.$route.fullPath==='/login'?'active':''">
                     <span>登录</span>/
                 </router-link>
                 <router-link to="/settings" tag="span" :class="this.$route.fullPath==='/settings'?'active':''">
                     <span>注册</span>
                 </router-link>
-                
             </p>
         </div>
         <div class="M-mine">
@@ -41,7 +37,7 @@
                 <i class="iconfont M-icon icon-shoucang-copy"></i>
                 <span>我的心愿单</span>
             </li>
-            <li>
+            <li @click="ha()">
                 <i class="iconfont M-icon icon-xiaoxi"></i>
                 <span>我的消息</span>
             </li>
@@ -59,10 +55,20 @@
 </template>
 <script>
 export default {
+  name: "M-app",
+  data:{
+    if(){
+      datas:'<span>#8888</span>'
+    }
+  },
   methods: {
     goto() {
       this.$router.replace({ name: "Settings" });
+    },
+    ha(){
+      console.log(window.localStorage.getItem("Authorization"));
     }
+
   }
 };
 </script>
@@ -175,8 +181,7 @@ html {
   width: 100%;
   flex: 1;
   background: #f0f0f0;
-  /* display: flex;
-        flex-direction: column-reverse; */
+  margin-bottom: 60px;
 }
 .M-forter ul {
   width: 100%;

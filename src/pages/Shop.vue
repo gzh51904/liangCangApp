@@ -4,7 +4,7 @@
     <Nav />
     <Banner />
 
-    <div class="cheap">
+    <div class="cheap conStyle">
       <h3>今日特惠</h3>
       <div class="swiper-container">
         <div class="swiper-wrapper">
@@ -29,7 +29,7 @@
         <img src="../assets/img/bag.jpg" alt />
       </p>
     </div>
-    <div class="list_cheap">
+    <div class="list_cheap conStyle">
       <div class="topic" v-for="(item,ids) of cheap_lists" :key="ids">
         <h3>{{item.tips}}</h3>
         <p class="blurb">{{item.blurbs}}</p>
@@ -57,7 +57,7 @@
         <img src="../assets/img/shubao.jpg" alt />
       </p>
     </div>
-    <div class="cancer">
+    <div class="cancer conStyle">
       <h3>心思细腻又浪漫的巨蟹座</h3>
       <p class="blurb">这些礼物很贴心</p>
       <img src="../assets/img/cancer.jpg" alt />
@@ -411,7 +411,7 @@ export default {
     margin: 10px 0 10px 10px;
   }
   .cancer {
-    width: 100%;
+    width: 96%;
     height: 300px;
     img {
       width: 100%;
@@ -440,5 +440,8 @@ export default {
 .hello {
   background: #ffff;
   z-index: 300;
+}
+.conStyle {
+  margin: 10px 10px 0 10px;
 }
 </style>
