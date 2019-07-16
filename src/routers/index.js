@@ -33,7 +33,8 @@ let Acc = {
 }
 import Pinpai from "../components/Discover/pinPai";
 import Subsearch from '../components/Subpages/Subsearch';
-import List from "../components/List/list";
+import Cloth from "../components/List/cloth";
+import Furniture from "../components/List/furniture";
 
 // order
 let All = {
@@ -57,7 +58,7 @@ let router = new VueRouter({
         },
         // 重定向
         {
-            path: '/shop',
+            path: '/',
             redirect: { name: 'Shop' }
         },
         {
@@ -152,7 +153,19 @@ let router = new VueRouter({
         {
             name: 'Subsearch',
             path: '/subsearch',
-            component: Subsearch,
+            component: Subsearch
+        },
+        {
+            name: 'Furniture',
+            path: '/furniture',
+            component: Furniture,
+            meta: {
+                keepAlive: false
+            }
+        }, {
+            name: 'Cloth',
+            path: '/cloth',
+            component: Cloth,
             meta: {
                 keepAlive: false//导航栏在该页面不予显示
             }
